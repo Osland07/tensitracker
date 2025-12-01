@@ -1,0 +1,27 @@
+# IDEs and OS
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+.phpstorm.meta.php
+
+# Environment File - NEVER commit your real .env file!
+/.env
+
+# Composer Dependencies
+/vendor/
+
+# Writable Directory
+# This directory is for cache, logs, sessions, and uploads.
+# It should not be tracked in version control.
+/writable/*
+!/writable/.gitkeep
+
+# Build artifacts
+/build/
+/dist/
+
+# Other
+/phpunit.xml
+database.db
+tensi.zip
