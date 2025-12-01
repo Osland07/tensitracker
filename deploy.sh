@@ -30,7 +30,7 @@ APP_BASE_URL='https://tensitracker.my.id'
 # --- VARIABEL INTERNAL ---
 PROJECT_ROOT=$(pwd) # Direktori tempat skrip ini dijalankan (harus root proyek CI4)
 # Asumsi public_html berada satu level di atas direktori proyek, sesuai standar shared hosting
-PUBLIC_HTML_PATH="/home/tensitras/public_html" # Sesuaikan jika path ini berbeda
+PUBLIC_HTML_PATH="/home/tensitra/public_html" # Sesuaikan jika path ini berbeda
 INDEX_PHP_PATH="${PUBLIC_HTML_PATH}/index.php"
 ENV_PATH="${PROJECT_ROOT}/.env"
 
