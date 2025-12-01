@@ -46,8 +46,9 @@ echo "----------------------------------------------------"
 echo "[1/7] Menyinkronkan isi 'public/' ke 'public_html/'..."
 # Buat public_html jika belum ada
 mkdir -p "$PUBLIC_HTML_PATH"
-# Sinkronkan file, hapus file di tujuan yang tidak ada di sumber
-rsync -av --delete "${PROJECT_ROOT}/public/" "${PUBLIC_HTML_PATH}/"
+# Hapus isi lama di public_html lalu salin isi baru dari public
+rm -rf "${PUBLIC_HTML_PATH:?}/"*
+cp -a "${PROJECT_ROOT}/public/." "${PUBLIC_HTML_PATH}/"
 echo "  > Isi 'public/' telah disinkronkan ke 'public_html/'."
 
 
