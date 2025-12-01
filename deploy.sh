@@ -57,7 +57,7 @@ echo "  > Isi 'public/' telah disinkronkan ke 'public_html/'."
 echo "[2/7] Memperbaiki path di '${INDEX_PHP_PATH}'..."
 # Baris ini sangat penting. Ini mengubah path relatif default ke path absolut
 # agar index.php bisa menemukan file framework dari lokasi public_html.
-sed -i "s|'../app/Config/Paths.php'|'${PROJECT_ROOT}/app/Config/Paths.php'|" "$INDEX_PHP_PATH"
+sed -i "s|FCPATH . '../app/Config/Paths.php'|'${PROJECT_ROOT}/app/Config/Paths.php'|" "$INDEX_PHP_PATH"
 echo "  > Path di public_html/index.php telah disesuaikan."
 
 
