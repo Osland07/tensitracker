@@ -136,7 +136,7 @@ fi
 # 7. Atur Izin Folder dan Jalankan Migrasi
 # ----------------------------------------------------
 echo "[7/7] Mengatur izin folder dan menjalankan migrasi database..."
-chmod -R 775 "${PROJECT_ROOT}/writable"
+chmod -R 777 "${PROJECT_ROOT}/writable"
 echo "  > Izin folder 'writable' telah diatur (775)."
 
 # Jalankan migrasi database
